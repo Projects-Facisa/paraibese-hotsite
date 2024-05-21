@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
+
+:root {
+    --primary-color: #ebdaa7;
+    --secondary-color: #dbc88d;
+    --tertiary-color: #ffffff ;
+    --quartenary-color: #000000;
+  }
+
+body {
+    background-image: url(../sources/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 600px;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.card.flip {
+    transform: rotateX(-180deg);
+}
+
+.card-front,
+.card-back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(10px);
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+
+.card-back {
+    transform: rotateX(180deg);
+    color: #ffffff;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    margin-bottom: 35px;
+}
+.formname {
+    color: white;
+
+}
+form input{
+    color:#ffffff!important;
+    background-color: var(--secondary-color);
+    border-radius: 20px; 
+    padding: 5px; 
+    margin: 5px;
+}
+
+form button {
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: background-color 0.3s ease; 
+    color:#ffffff!important;
+}
+
+form button:hover {
+    background-color: var(--primary-color)
+}
+
+
+.form-header {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.card-front #showRegisterBtn,
+.card-back #showLoginBtn {
+    color: var(--secondary-color);
+    margin-top: auto;
+}
+
+.card-front #showRegisterBtn:hover,
+.card-back #showLoginBtn:hover {
+    text-decoration: none;
+}
+
+.disable-mouse-events {
+    pointer-events: none;
+}
