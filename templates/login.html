@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="pt-BR" xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login e Registro</title>
-    <link href="../stylesheet/style.css" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login/Register</title>
+    <link href="../stylesheet/login.css" rel="stylesheet" />
+  </head>
+  <body>
     <div class="container">
-        <div class="card">
-            <div class="card-front" id="front">
-                <h2 class="header">Entrar</h2>
-                <form id="loginForm">
-                    <label class="formname" for="username">Usuário:</label>
-                    <input type="text" id="username">
-                    <br>
-                    <label class="formname" for="password">Senha:</label>
-                    <input type="password" id="password">
-                    <br>
-                    <br>
-                    <button type="submit" id="loginBtn">Entrar</button>
-                    <p class="dont-have-account">Não tem uma conta ? <a href="#" id="showRegisterBtn">Registre-se</a></p>
-                </form>
-            </div>
-            <div class="card-back" id="back">
-                <h2 class="header">Registrar</h2>
-                <form id="registerForm">
-                    <label class="formname" for= "newUsername">Novo Usuário:</label>
-                    <input type="text" id="newUsername">
-                    <br>
-                    <label class="formname" for="newPassword">Nova Senha:</label>
-                    <input type="password" id="newPassword">
-                    <br>
-                    <br>
-                    <button type="submit" id="registerBtn">Registrar</button>
-                    <p class="dont-have-account">Já possui uma conta? <a href="#" id="showLoginBtn">Entrar</a></p>
-                </form>
-            </div>
+      <div id="ovo">
+        <img src="../sources/ovo.png" width="400px" alt="">
+      </div>
+      <div class="card">
+        <div class="card-front" id="front">
+          <h2 class="header">Entrar</h2>
+          <form id="loginForm">
+            <label class="formname" for="username">Usuário:</label>
+            <input type="text" id="username" />
+            <br />
+            <label class="formname" for="password">Senha:</label>
+            <input type="password" id="password" />
+            <br />
+            <br />
+            <button type="submit" id="loginBtn">Entrar</button>
+            <p class="dont-have-account">
+              Não tem uma conta ?
+              <a href="#" id="showRegisterBtn">Registre-se</a>
+            </p>
+          </form>
         </div>
+        <div class="card-back" id="back">
+          <h2 class="header">Registrar</h2>
+          <form id="registerForm">
+            <label class="formname" for="newUsername">Novo Usuário:</label>
+            <input type="text" id="newUsername" />
+            <br />
+            <label class="formname" for="newPassword">Nova Senha:</label>
+            <input type="password" id="newPassword" />
+            <br />
+            <br />
+            <button type="submit" id="registerBtn">Registrar</button>
+            <p class="dont-have-account">
+              Já possui uma conta? <a href="#" id="showLoginBtn">Entrar</a>
+            </p>
+          </form>
+        </div>
+      </div>
     </div>
-</body>
-<script src="..//scripts/script.js"></script>
+  </body>
+  <script src="..//scripts/script.js"></script>
 </html>

@@ -3,9 +3,9 @@
 :root {
     --primary-color: #ebdaa7;
     --secondary-color: #dbc88d;
-    --tertiary-color: #ffffff ;
+    --tertiary-color: #ffffff;
     --quartenary-color: #000000;
-  }
+}
 
 body {
     background-image: url(../sources/background.jpg);
@@ -17,22 +17,27 @@ body {
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 .container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 40%;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    perspective: 600px;
+    perspective: 1500px;
+    perspective-origin: 80%;
+    gap: 20px; 
+    text-align: center;
 }
 
 .card {
     height: 400px;
     width: 300px;
     transform-style: preserve-3d;
-    transition: 0.5s;
+    transition: transform 0.5s;
     border-radius: 10px;
+    margin: 0 auto;
 }
-
 .card.flip {
     transform: rotateX(-180deg);
 }
@@ -45,21 +50,20 @@ body {
     top: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(10px);
     backface-visibility: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #ffffff;
+    color: var(--tertiary-color);
     text-align: center;
-    transition: 0.5s;
+    transition: transform 0.5s;
     border-radius: 10px;
 }
 
 .card-back {
     transform: rotateX(180deg);
-    color: #ffffff;
+    color: var(--tertiary-color);
     text-align: center;
 }
 
@@ -69,36 +73,37 @@ form {
     justify-content: center;
     align-items: center;
 }
-.header{
+
+.header {
     margin-bottom: 35px;
 }
-.formname {
-    color: white;
 
+.formname {
+    color: var(--tertiary-color);
 }
-form input{
-    color:#ffffff!important;
-    background-color: var(--secondary-color);
-    border-radius: 20px; 
-    padding: 5px; 
+
+form input {
+    color: var(--tertiary-color) !important;
+    background-color: var(--tertiary-color);
+    border-radius: 20px;
+    padding: 5px;
     margin: 5px;
 }
 
 form button {
     cursor: pointer;
-    background-color: var(--secondary-color);
-    padding: 10px 15px; 
-    border: none; 
-    border-radius: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s ease; 
-    color:#ffffff!important;
+    background-color: var(--quartenary-color);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    color: var(--tertiary-color) !important;
 }
 
 form button:hover {
     background-color: var(--primary-color)
 }
-
 
 .form-header {
     font-size: 20px;
@@ -107,7 +112,7 @@ form button:hover {
 
 .card-front #showRegisterBtn,
 .card-back #showLoginBtn {
-    color: var(--secondary-color);
+    color: var(--tertiary-color);
     margin-top: auto;
 }
 
@@ -118,4 +123,9 @@ form button:hover {
 
 .disable-mouse-events {
     pointer-events: none;
+}
+
+#ovo {
+    justify-self: start;
+    align-self: start; 
 }
