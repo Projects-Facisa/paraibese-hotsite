@@ -1,121 +1,137 @@
-@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700");
-
-:root {
-    --primary-color: #ebdaa7;
-    --secondary-color: #dbc88d;
-    --tertiary-color: #ffffff ;
-    --quartenary-color: #000000;
-  }
-
-body {
-    background-image: url(../sources/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    margin: 0;
-    padding: 0;
-    font-family: 'Josefin Sans', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    perspective: 600px;
+a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.card {
-    height: 400px;
-    width: 300px;
-    transform-style: preserve-3d;
-    transition: 0.5s;
-    border-radius: 10px;
+a:hover {
+  opacity: 0.7;
 }
 
-.card.flip {
-    transform: rotateX(-180deg);
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #ebdaa7;
+  height: 8vh;
+  position: relative;
 }
 
-.card-front,
-.card-back {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(10px);
-    backface-visibility: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-    text-align: center;
-    transition: 0.5s;
-    border-radius: 10px;
+.nav-list {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
 }
 
-.card-back {
-    transform: rotateX(180deg);
-    color: #ffffff;
-    text-align: center;
+.nav-list li {
+  margin-inline: 16px;
+  letter-spacing: 3px;
+  position: relative;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.header{
-    margin-bottom: 35px;
-}
-.formname {
-    color: white;
-
-}
-form input{
-    color:#ffffff!important;
-    background-color: var(--secondary-color);
-    border-radius: 20px; 
-    padding: 5px; 
-    margin: 5px;
+.nav-list li strong {
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
 }
 
-form button {
-    cursor: pointer;
-    background-color: var(--secondary-color);
-    padding: 10px 15px; 
-    border: none; 
-    border-radius: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    transition: background-color 0.3s ease; 
-    color:#ffffff!important;
+.nav-list li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
-form button:hover {
-    background-color: var(--primary-color)
+.nav-list li:hover::after {
+  width: 100%;
 }
 
-
-.form-header {
-    font-size: 20px;
-    margin-bottom: 20px;
+.buscar-box {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.5s;
 }
 
-.card-front #showRegisterBtn,
-.card-back #showLoginBtn {
-    color: var(--secondary-color);
-    margin-top: auto;
+.buscar-box.ativar {
+  width: 400px;
 }
 
-.card-front #showRegisterBtn:hover,
-.card-back #showLoginBtn:hover {
-    text-decoration: none;
+.buscar-box .lupa-buscar,
+.buscar-box .btn-fechar {
+  min-width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
-.disable-mouse-events {
-    pointer-events: none;
+.buscar-box .btn-fechar i {
+  font-size: 30px;
+  margin-left: 15px;
+}
+
+.buscar-box .lupa-buscar i {
+  font-size: 30px;
+}
+
+.buscar-box .input-buscar {
+  position: absolute;
+  left: 80px;
+  width: calc(100% - 120px);
+  height: 100%;
+  line-height: 80px;
+}
+
+.buscar-box .input-buscar input {
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.btn-fechar.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.extras {
+  display: flex;
+  align-items: center;
+}
+
+.extras > div {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.extras .perfil {
+  font-size: 30px;
+}
+
+.teste {
+  display: flex;
 }
