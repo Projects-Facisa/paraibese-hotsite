@@ -135,3 +135,14 @@ nav {
 .teste {
   display: flex;
 }
+
+.container {
+  text-align: center;
+}
+
+.grid-image{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  justify-content: center;
+  gap: 10px;
+}

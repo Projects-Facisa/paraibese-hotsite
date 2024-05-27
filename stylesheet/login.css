@@ -83,7 +83,9 @@ form {
 }
 
 form input {
-    color: var(--tertiary-color) !important;
+    border: 0;
+    outline: 0;
+    color: var(--quartenary-color) !important;
     background-color: var(--tertiary-color);
     border-radius: 20px;
     padding: 5px;
