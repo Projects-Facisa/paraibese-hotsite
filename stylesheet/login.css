@@ -31,12 +31,13 @@ body {
 }
 
 .card {
-    height: 400px;
-    width: 300px;
+    height: 75%;
+    width: 75%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
     border-radius: 10px;
     margin: 0 auto;
+    font-size: 20pt;
 }
 .card.flip {
     transform: rotateX(-180deg);
@@ -56,7 +57,6 @@ body {
     align-items: center;
     justify-content: center;
     color: var(--tertiary-color);
-    text-align: center;
     transition: transform 0.5s;
     border-radius: 10px;
 }
@@ -64,14 +64,11 @@ body {
 .card-back {
     transform: rotateX(180deg);
     color: var(--tertiary-color);
-    text-align: center;
 }
 
-form {
+.card .cardsForms {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .header {
@@ -82,7 +79,7 @@ form {
     color: var(--tertiary-color);
 }
 
-form input {
+.cardsForms input {
     border: 0;
     outline: 0;
     color: var(--quartenary-color) !important;
@@ -90,17 +87,22 @@ form input {
     border-radius: 20px;
     padding: 5px;
     margin: 5px;
+    text-align: center;
+    font-size: 16pt;
 }
 
 form button {
     cursor: pointer;
     background-color: var(--quartenary-color);
-    padding: 10px 15px;
+    align-self: center;
+    padding: 10px 25px;
+    margin-bottom: 15px;
     border: none;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease;
     color: var(--tertiary-color) !important;
+    font-size: 16pt;
 }
 
 form button:hover {
