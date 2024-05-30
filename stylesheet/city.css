@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 1em;
+}
+
+.cabaceiras-main {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.main-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.text-section,
+.carousel-section {
+  flex: 1;
+  min-width: 300px;
+}
+
+.text-block {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.text-block p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: italic;
+  color: gray;
+}
+
+.views-likes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  color: gray;
+}
+
+.carousel-container {
+  overflow: hidden;
+  border-radius: 10px;
+  height: 100%;
+}
+
+.info-section {
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.info-section p {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-family: "Merriweather", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.button {
+  background: #8d8b7e;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: background 0.3s;
+  font-size: 1.4em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+#atrac {
+  background: #f0ebc6;
+}
+.button:hover {
+  background: #f0ebc6;
+}
+
+.caba-images {
+  display: flex;
+  gap: 10px;
+}
+.image-gay {
+  height: 200px;
+  height: 150px;
+}
+
+.atracoes {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2em;
+}

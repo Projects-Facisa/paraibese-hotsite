@@ -1,0 +1,254 @@
+:root {
+  --primary-color: #ebdaa7;
+  --secondary-color: #dbc88d;
+  --tertiary-color: #ffffff;
+  --quartenary-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #ebdaa7;
+  height: 8vh;
+  position: relative;
+  & img {
+    width: 200px;
+    margin: 15px 5px;
+  }
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  inset: 0;
+}
+.nav-list li {
+  margin-inline: 16px;
+  letter-spacing: 3px;
+  position: relative;
+}
+.nav-list li strong {
+  display: block;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.nav-list li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav-list li:hover::after {
+  width: 100%;
+}
+.buscar-box {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  transition: 0.5s;
+}
+.buscar-box.ativar {
+  width: 400px;
+}
+.buscar-box .lupa-buscar,
+.buscar-box .btn-fechar {
+  min-width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.buscar-box .btn-fechar i {
+  font-size: 30px;
+  margin-left: 15px;
+}
+.buscar-box .lupa-buscar i {
+  font-size: 30px;
+}
+.buscar-box .input-buscar {
+  position: absolute;
+  left: 80px;
+  width: calc(100% - 120px);
+  height: 100%;
+  line-height: 80px;
+}
+.buscar-box .input-buscar input {
+  border: 0;
+  outline: 0;
+  font-size: 20px;
+  background-color: transparent;
+}
+.btn-fechar.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.usuario {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+.usuario > .perfil {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.usuario > .menu {
+  position: absolute;
+  top: 120px;
+  right: 25px;
+  background-color: var(--primary-color);
+  width: 300px;
+  box-sizing: 0 5px 25px rgba(0,0,0,0.1); 
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.usuario > .menu.active{
+  top: 90px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.usuario > .menu::before {
+  content: '';
+  background-color: var(--primary-color);
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+
+.usuario > .menu > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  padding: 20px 0;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.usuario > .menu > h3 > span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.usuario > .menu > ul > li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.usuario > .menu > ul > li > a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 450;
+  transition: 0.5s;
+}
+
+.usuario > .menu > ul > li > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.usuario > .menu > ul > li > a:hover::after {
+  width: 93%;
+}
+
+
+.usuario > .menu > ul > li > i {
+  max-width: 20px;
+  margin-right: 15px;
+  margin-left: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.usuario > .menu > ul > li:hover > img{
+    opacity: 1;
+}
+.usuario > .menu > ul > li:hover > a{
+  opacity: 1;
+}
+
+.pesquisa-perfil {
+  display: flex;
+  margin-right: 15px;
+}
+
+/* FOOTER CONTENT GRID */
+.footer-content {
+  grid-area: footer;
+  width: 100%;
+  height: 30vh;
+  background-color: #1c1c1c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center-footer{
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.footer-icons img {
+  width: 250px;
+}
+
+.direitos-reservados {
+  font-size: 100%;
+  font-weight: bold;
+  color: #ffffff; 
+  padding-bottom: 20px;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabaceiras</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link href="../stylesheet/page.css" rel="stylesheet" />
+    <link href="../stylesheet/city.css" rel="stylesheet" />
+    <link href="../stylesheet/style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/49272a6f5a.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header-content">
+      <nav>
+        <img src="../sources/logoHD.png" alt="" />
+        <!-- LOGO -->
+
+        <ul class="nav-list">
+          <!-- NAV LIST -->
+          <li><strong>Cidades</strong></li>
+          <li><strong>Roteiros</strong></li>
+          <li><strong>Descubra</strong></li>
+          <li><strong>Noticias</strong></li>
+        </ul>
+
+        <div class="pesquisa-perfil">
+          <!-- PESQUISA-PERFIL -->
+
+          <div class="buscar-box">
+            <div class="lupa-buscar">
+              <i class="bi bi-search"></i>
+            </div>
+            <div class="input-buscar">
+              <input type="text" name="" id="" placeholder="Pesquisa" />
+            </div>
+            <div class="btn-fechar">
+              <i class="bi bi-x-circle"></i>
+            </div>
+          </div>
+          <div class="usuario">
+            <div class="perfil" onclick="menuToggle();">
+              <i class="bi bi-person"></i>
+            </div>
+            <div class="menu">
+              <h3>Bem-Vindo(a)<br /><span>João da silva</span></h3>
+              <ul>
+                <li>
+                  <i class="bi bi-box-arrow-left"></i
+                  ><a href="#">Sair do perfil</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="cabaceiras-main">
+        <img
+          src="../sources/cidades/imagens-paraibese/cabaceiras/roliude.png"
+          alt="Main Image"
+          class="main-image"
+        />
+      </div>
+      <div class="content">
+        <div class="text-section">
+          <div class="text-block">
+            <p>
+              🌟 Cabaceiras é incrível! Conhecida como a "Roliúde Nordestina",
+              essa cidade charmosa encanta com suas produções cinematográficas,
+              a caprinocultura forte e formações geográficas únicas. Vale muito
+              a visita! 🎬🐐🗺️ #Turismo #Cinema #Nordeste
+            </p>
+            <div class="views-likes">
+              <div>
+                <i class="fa-regular fa-eye"></i>
+                <span>4228 VIEWS</span>
+              </div>
+              <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>3423 LIKES</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-container">
+          <div
+            class="carousel"
+            data-flickity='{"autoPlay" :true, "wrapAround": true}'
+          >
+            <div
+              class="carousel-cell"
+              style="background-image: url(../sources/cidades/cabaceiras.jpeg)"
+            ></div>
+            <div
+              class="carousel-cell"
+              style="background-image: url(../sources/cidades/queimadas.jpeg)"
+            ></div>
+            <div
+              class="carousel-cell"
+              style="background-image: url(../sources/cidades/boqueirao.png)"
+            ></div>
+            <div
+              class="carousel-cell"
+              style="
+                background-image: url(https://images.kabum.com.br/produtos/fotos/459144/placa-de-video-rx-7600-challenger-asrock-amd-radeon-8gb-gddr6-90-ga41zz-00uanf_1685551526_original.jpg);
+              "
+            ></div>
+          </div>
+        </div>
+      </div>
+      <div class="info-section">
+        <p>
+          Cabaceiras é uma cidade na Paraíba, conhecida como a
+          <em>"Roliúde Nordestina"</em> por ser cenário de muitos filmes e
+          séries, incluindo <em>O Auto da Compadecida</em>. Com um charme
+          interiorano e construções históricas, destaca-se pelo Lajedo de Pai
+          Mateus, um sítio arqueológico com formações rochosas únicas. A
+          economia local é baseada na agropecuária, especialmente na criação de
+          caprinos e ovinos, sendo conhecida como a "Capital Mundial do Bode". A
+          Festa do Bode Rei é um evento anual que atrai muitos visitantes,
+          promovendo a cultura e produtos locais, como artesanato em couro e
+          culinária típica. O clima semiárido e a vegetação da caatinga
+          caracterizam a região. Cabaceiras se destaca pela resiliência de seu
+          povo e importância cultural, sendo um polo turístico no sertão
+          paraibano. Seja pelos cenários naturais, produções audiovisuais ou
+          festividades, a cidade encanta seus visitantes.
+        </p>
+        <div class="button-container">
+          <a href="#" class="button" id="atrac">ATRAÇÕES</a>
+          <a href="#" class="button">HOSPEDAGEM</a>
+          <a href="#" class="button">SERVIÇOS</a>
+          <a href="#" class="button">ALIMENTAÇÃO</a>
+          <a href="#" class="button">LAZER</a>
+          <a href="#" class="button">ROTEIROS</a>
+          <a href="#" class="button">EVENTOS</a>
+        </div>
+      </div>
+      <div class="atracoes-section">
+        <p class="atracoes">Atrações culturais em cabaceiras</p>
+        <div class="caba-images">
+          <img
+            src="https://th.bing.com/th/id/OIP.5IW7Gi3DL8EzHDkUMt0lRAHaEK?w=281&h=180&c=7&r=0&o=5&pid=1.7"
+            alt="cabaceiras"
+            class="image-gay"
+          />
+          <img
+            src="https://th.bing.com/th?id=OIP.MUBAey51LaONkxz0CHrSUQHaEo&w=316&h=197&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"
+            alt="cabaceiras"
+            class="image-gay"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.WmJb_7qynxqlYpYer2LK9AHaEK?w=303&h=180&c=7&r=0&o=5&pid=1.7"
+            alt="cabaceiras"
+            class="image-gay"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.aZa2zuex27uPWkd2uS2jDwHaEK?w=293&h=180&c=7&r=0&o=5&pid=1.7"
+            alt="cabaceiras"
+            class="image-gay"
+          />
+        </div>
+      </div>
+      <div class="atracoes-section">
+        <p class="atracoes">Atrações naturais em cabaceiras</p>
+        <div class="caba-images">
+          <img
+            src="https://th.bing.com/th/id/OIP.gYWKiqbq_LpuWH1r8VaVAgHaE8?w=249&h=180&c=7&r=0&o=5&pid=1.7"
+            alt="cabaceiras"
+            class="image-gay"
+          />
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="cabaceiras"
+            class="image-gay"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.AwjYQGg-hKLBG5zqErykewHaEK?w=289&h=180&c=7&r=0&o=5&pid=1.7"
+            alt="cabaceiras"
+            class="image-gay"
+          />
+          <img
+            src="https://th.bing.com/th/id/OIP.76ygBOfYL56wLGD8PlwWEwHaEK?w=328&h=184&c=7&r=0&o=5&pid=1.7"
+            alt="cabaceiras"
+            class="image-gay"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../scripts/footerNheader.js"></script>
+  </body>
+</html>
