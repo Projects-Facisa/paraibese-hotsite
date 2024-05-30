@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #ebdaa7;
+  --secondary-color: #dbc88d;
+  --tertiary-color: #ffffff;
+  --quartenary-color: #000000;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -113,6 +120,7 @@ nav {
 .extras {
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 .extras > .perfil {
@@ -125,6 +133,99 @@ nav {
   font-size: 30px;
 }
 
+.extras > .menu {
+  position: absolute;
+  top: 120px;
+  right: 25px;
+  background-color: var(--primary-color);
+  width: 300px;
+  box-sizing: 0 5px 25px rgba(0,0,0,0.1); 
+  border-radius: 15px;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+}
+.extras > .menu.active{
+  top: 90px;
+  visibility: visible;
+  opacity: 1;
+}
+
+.extras > .menu::before {
+  content: '';
+  background-color: var(--primary-color);
+  position: absolute;
+  top: -5px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+}
+
+.extras > .menu > h3 {
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  padding: 20px 0;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+.extras > .menu > h3 > span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.extras > .menu > ul > li {
+  list-style: none;
+  padding: 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.extras > .menu > ul > li > a {
+  color: black;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 450;
+  transition: 0.5s;
+}
+
+.extras > .menu > ul > li > a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+}
+
+.extras > .menu > ul > li > a:hover::after {
+  width: 93%;
+}
+
+
+.extras > .menu > ul > li > img {
+  max-width: 20px;
+  margin-right: 15px;
+  margin-left: 10px;
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.extras > .menu > ul > li:hover > img{
+    opacity: 1;
+}
+.extras > .menu > ul > li:hover > a{
+  opacity: 1;
+}
+
 .pesquisa-perfil {
   display: flex;
+  margin-right: 15px;
 }
