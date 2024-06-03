@@ -1,212 +1,214 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Queimadas</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    />
+    
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
     <link href="../stylesheet/page.css" rel="stylesheet" />
     <link href="../stylesheet/city.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/49272a6f5a.js"
-      crossorigin="anonymous"
-    ></script>
+    <link href="../stylesheet/style.css" rel="stylesheet" />
+
+    <script src="https://kit.fontawesome.com/49272a6f5a.js" crossorigin="anonymous"></script>
   </head>
+
   <body>
-    <header class="header-content">
-      <nav>
-        <img src="../sources/footer-header-icons/logoHD.png" alt="" />
-        <!-- LOGO -->
-
-        <ul class="nav-list">
-          <!-- NAV LIST -->
-          <li><strong>Cidades</strong></li>
-          <li><strong>Roteiros</strong></li>
-          <li><strong>Descubra</strong></li>
-          <li><strong>Noticias</strong></li>
-        </ul>
-
-        <div class="pesquisa-perfil">
-          <!-- PESQUISA-PERFIL -->
-
-          <div class="buscar-box">
-            <div class="lupa-buscar">
-              <i class="bi bi-search"></i>
-            </div>
-            <div class="input-buscar">
-              <input type="text" name="" id="" placeholder="Pesquisa" />
-            </div>
-            <div class="btn-fechar">
-              <i class="bi bi-x-circle"></i>
-            </div>
-          </div>
-          <div class="usuario">
-            <div class="perfil" onclick="menuToggle();">
-              <i class="bi bi-person"></i>
-            </div>
-            <div class="menu">
-              <h3>Bem-Vindo(a)<br /><span>João da silva</span></h3>
-              <ul>
-                <li>
-                  <i class="bi bi-box-arrow-left"></i
-                  ><a href="#">Sair do perfil</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
+    <!-- BODY CONTENT -->
     <div class="container">
-      <div class="cabaceiras-main">
-        <img
-          src="../sources/cidades/imagens-paraibese/cabaceiras/roliude.png"
-          alt="Main Image"
-          class="main-image"
-        />
-      </div>
-      <div class="content">
-        <div class="text-section">
-          <div class="text-block">
-            <p>
-              🌟 Cabaceiras é incrível! Conhecida como a "Roliúde Nordestina",
-              essa cidade charmosa encanta com suas produções cinematográficas,
-              a caprinocultura forte e formações geográficas únicas. Vale muito
-              a visita! 🎬🐐🗺️ #Turismo #Cinema #Nordeste
-            </p>
-            <div class="views-likes">
-              <div>
-                <i class="fa-regular fa-eye"></i>
-                <span>4228 VIEWS</span>
+      <!-- HEADER -->
+      <header class="header-content">
+        <nav>
+          <img src="../sources/footer-header-icons/logoHD.png" alt="" />
+          <!-- LOGO -->
+
+          <ul class="nav-list">
+            <!-- NAV LIST -->
+            <li><strong>Cidades</strong></li>
+            <li><strong>Roteiros</strong></li>
+            <li><strong>Descubra</strong></li>
+            <li><strong>Noticias</strong></li>
+          </ul>
+
+          <div class="pesquisa-perfil">
+            <!-- PESQUISA-PERFIL -->
+
+            <div class="buscar-box">
+              <div class="lupa-buscar">
+                <i class="bi bi-search"></i>
               </div>
-              <div>
-                <i class="fa-regular fa-heart"></i>
-                <span>3423 LIKES</span>
+              <div class="input-buscar">
+                <input type="text" name="" id="" placeholder="Pesquisa" />
+              </div>
+              <div class="btn-fechar">
+                <i class="bi bi-x-circle"></i>
+              </div>
+            </div>
+            <div class="usuario">
+              <div class="perfil" onclick="menuToggle();">
+                <i class="bi bi-person"></i>
+              </div>
+              <div class="menu">
+                <h3>Bem-Vindo(a)<br /><span>João da silva</span></h3>
+                <ul>
+                  <li>
+                    <i class="bi bi-box-arrow-left"></i><a href="#">Sair do perfil</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- HEADER END -->
+
+      <!-- MAIN -->
+      <div class="main-content">
+        <img src="../sources/cidades/imagens-paraibese/cabaceiras/roliude.png" alt="Main Image" class="main-image" />
+
+        <div class="content">
+          <div class="text-section">
+            <div class="text-block">
+              <p>
+                🌟 Cabaceiras é incrível! Conhecida como a "Roliúde Nordestina",
+                essa cidade charmosa encanta com suas produções cinematográficas,
+                a caprinocultura forte e formações geográficas únicas. Vale muito
+                a visita! 🎬🐐🗺️ #Turismo #Cinema #Nordeste
+              </p>
+              <div class="views-likes">
+                <div>
+                  <i class="fa-regular fa-eye"></i>
+                  <span>4228 VIEWS</span>
+                </div>
+                <div>
+                  <i class="fa-regular fa-heart"></i>
+                  <span>3423 LIKES</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-section">
+            <div class="carousel" data-flickity='{"autoPlay" :true, "wrapAround": true}'>
+              <div class="carousel-cell"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/taxi.jpg)"></div>
+              <div class="carousel-cell"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/autodacompadecida.jpg)">
+              </div>
+              <div class="carousel-cell"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/cabaceiras6.jpg)"></div>
+              <div class="carousel-cell"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/cabaceiras7.jpg)"></div>
+              <div class="carousel-cell"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/cabaceiras8.jpeg)"></div>
+              <div class="carousel-cell"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/cabaceiras9.jpeg)"></div>
+            </div>
+          </div>
+        </div>
+        <div class="info-section">
+          <p>
+            Cabaceiras é uma cidade na Paraíba, conhecida como a
+            <em>"Roliúde Nordestina"</em> por ser cenário de muitos filmes e
+            séries, incluindo <em>O Auto da Compadecida</em>. Com um charme
+            interiorano e construções históricas, destaca-se pelo Lajedo de Pai
+            Mateus, um sítio arqueológico com formações rochosas únicas. A
+            economia local é baseada na agropecuária, especialmente na criação de
+            caprinos e ovinos, sendo conhecida como a "Capital Mundial do Bode". A
+            Festa do Bode Rei é um evento anual que atrai muitos visitantes,
+            promovendo a cultura e produtos locais, como artesanato em couro e
+            culinária típica. O clima semiárido e a vegetação da caatinga
+            caracterizam a região. Cabaceiras se destaca pela resiliência de seu
+            povo e importância cultural, sendo um polo turístico no sertão
+            paraibano. Seja pelos cenários naturais, produções audiovisuais ou
+            festividades, a cidade encanta seus visitantes.
+          </p>
+          <div class="button-container">
+            <a href="#" class="button" id="atrac">ATRAÇÕES</a>
+            <a href="#" class="button">HOSPEDAGEM</a>
+            <a href="#" class="button">SERVIÇOS</a>
+            <a href="#" class="button">ALIMENTAÇÃO</a>
+            <a href="#" class="button">LAZER</a>
+            <a href="#" class="button">ROTEIROS</a>
+            <a href="#" class="button">EVENTOS</a>
+          </div>
+        </div>
+        <div class="atracoes-section">
+          <p class="atracoes">Atrações culturais em cabaceiras</p>
+          <div class="carousel-section">
+            <div class="carousel" data-flickity='{"autoPlay" :true, "wrapAround": true}'>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/1.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/2.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/3.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/4.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/5.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/6.jpg)">
+              </div>
+            </div>
+          </div>
+          <p class="atracoes">Atrações naturais em cabaceiras</p>
+          <div class="carousel-section">
+            <div class="carousel" data-flickity='{"autoPlay" :true, "wrapAround": true}'>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/1.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/2.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/3.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/4.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/5.jpg)">
+              </div>
+              <div class="carousel-cell city"
+                style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/6.jpg)">
               </div>
             </div>
           </div>
         </div>
-        <div class="carousel-section">
-          <div class="carousel" data-flickity='{"autoPlay" :true, "wrapAround": true}'>
-            <div
-              class="carousel-cell"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/taxi.jpg)"
-            ></div>
-            <div
-              class="carousel-cell"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/autodacompadecida.jpg)"
-            ></div>
-            <div
-              class="carousel-cell"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/cabaceiras6.jpg)"
-            ></div>
-            <div
-              class="carousel-cell"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/cabaceiras7.jpg)"
-            ></div>
-            <div
-              class="carousel-cell"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/cabaceiras8.jpeg)"
-            ></div>
-            <div
-              class="carousel-cell"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/cabaceiras9.jpeg)"></div>
+      </div>
+      <!-- MAIN END -->
+
+      <!-- FOOTER -->
+      <div class="footer-content" id="footer-content">
+        <div class="center-footer">
+          <div class="footer-icons">
+            <div class="logo-icon-footer">
+              <img src="../sources/footer-header-icons/logobranco.png" alt="">
+            </div>
+            <div class="gov-icons">
+              <img src="../sources/footer-header-icons/pbtur-icon.png" alt="">
+              <img src="../sources/footer-header-icons/secretaria-tur.png" alt="">
+              <img src="../sources/footer-header-icons/governo-pb.png" alt="">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="info-section">
-        <p>
-          Cabaceiras é uma cidade na Paraíba, conhecida como a
-          <em>"Roliúde Nordestina"</em> por ser cenário de muitos filmes e
-          séries, incluindo <em>O Auto da Compadecida</em>. Com um charme
-          interiorano e construções históricas, destaca-se pelo Lajedo de Pai
-          Mateus, um sítio arqueológico com formações rochosas únicas. A
-          economia local é baseada na agropecuária, especialmente na criação de
-          caprinos e ovinos, sendo conhecida como a "Capital Mundial do Bode". A
-          Festa do Bode Rei é um evento anual que atrai muitos visitantes,
-          promovendo a cultura e produtos locais, como artesanato em couro e
-          culinária típica. O clima semiárido e a vegetação da caatinga
-          caracterizam a região. Cabaceiras se destaca pela resiliência de seu
-          povo e importância cultural, sendo um polo turístico no sertão
-          paraibano. Seja pelos cenários naturais, produções audiovisuais ou
-          festividades, a cidade encanta seus visitantes.
-        </p>
-        <div class="button-container">
-          <a href="#" class="button" id="atrac">ATRAÇÕES</a>
-          <a href="#" class="button">HOSPEDAGEM</a>
-          <a href="#" class="button">SERVIÇOS</a>
-          <a href="#" class="button">ALIMENTAÇÃO</a>
-          <a href="#" class="button">LAZER</a>
-          <a href="#" class="button">ROTEIROS</a>
-          <a href="#" class="button">EVENTOS</a>
+        <div class="direitos-reservados">
+          <p>PBTUR © 2024. TODOS OS DIREITOS RESERVADOS.</p>
         </div>
       </div>
-      <div class="atracoes-section">
-        <p class="atracoes">Atrações culturais em cabaceiras</p>
-        <div class="carousel-section">
-          <div class="carousel" data-flickity='{"autoPlay" :true, "wrapAround": true}'>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/1.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/2.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/3.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/4.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/5.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-culturais/6.jpg)"></div>
-          </div>
-        </div>
-        <p class="atracoes">Atrações naturais em cabaceiras</p>
-        <div class="carousel-section">
-          <div class="carousel" data-flickity='{"autoPlay" :true, "wrapAround": true}'>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/1.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/2.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/3.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/4.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/5.jpg)"
-            ></div>
-            <div
-              class="carousel-cell city"
-              style="background-image: url(../sources/cidades/imagens-paraibese/cabaceiras/atracoes-naturais/6.jpg)"></div>
-          </div>
-        </div>
-      </div>
+      <!-- FOOTER END -->
+
+    </div>
+    <!-- BODY CONTENT END-->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="../scripts/footerNheader.js"></script>
   </body>
