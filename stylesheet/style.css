@@ -48,11 +48,13 @@ body {
 
 .carousel {
   margin-bottom: 8%;
-  margin-top:1%;
+  margin-top: 1%;
+}
+.carousel-link {
+  width: 33%;
 }
 
 .carousel-cell {
-  width: 33%;
   height: 250px;
   margin-right: 10px;
   border-radius: 15px;
