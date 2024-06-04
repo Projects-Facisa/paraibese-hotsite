@@ -1,0 +1,68 @@
+
+.hospedagem-section {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.card-hospedagem {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 15px;
+    margin: 15px 0;
+    padding: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+                0 1px 3px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.card-hospedagem:hover {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.15),
+                0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.img-hospedagem > img {
+    width: 300px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.description-hospedagem > h3{
+    font-size: 1.5em;
+}
+
+.description-hospedagem > .localizacao-hospedagem {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.description-hospedagem > .description-p {
+    margin-top: 15px;
+}
+
+.button-reservas {
+position: absolute;
+bottom: 20px;
+right: 20px;
+border-radius: 3px;
+border: none;
+background: #1875FF;
+color: white;
+font-family: inherit;
+text-align: center;
+font-size: 14px;
+padding: 1em;
+cursor: pointer;
+transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    & a {
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+.button-reservas:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}

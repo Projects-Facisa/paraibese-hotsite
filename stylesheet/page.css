@@ -10,7 +10,9 @@
   padding: 0;
 }
 
-nav {
+.header-content > nav {
+  padding-top: 4px;
+  padding-left: 25px;
   display: flex;
   justify-content: space-between;
   align-items: center;
