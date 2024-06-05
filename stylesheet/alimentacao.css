@@ -49,6 +49,10 @@
         bottom: 5px;
         right: 5px;
         font-size: 1.6em;
+        cursor: pointer;
+    }
+    & .bi.bi-instagram:hover{
+        color: #3f729b;
     }
 }
 
