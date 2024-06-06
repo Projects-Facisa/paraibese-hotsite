@@ -32,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   };
 
+  showSection("atracoes-section");
+
   var carousels = document.querySelectorAll(".carousel");
   carousels.forEach(function (carousel) {
     new Flickity(carousel, {
@@ -44,3 +46,11 @@ document.addEventListener("DOMContentLoaded", function () {
     alert("Esta funcionalidade ainda está em desenvolvimento.");
   };
 });
+
+function toggleExpanded(element) {
+  var articles = document.querySelectorAll(".button");
+  articles.forEach(function (button) {
+    button.classList.remove("active");
+  });
+  element.closest(".button").classList.add("active");
+}

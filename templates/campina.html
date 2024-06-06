@@ -162,14 +162,23 @@
             lugar irresistível para explorar.
           </p>
           <div class="button-container">
-            <button class="button" onclick="showSection('atracoes-section')">
+            <button
+              class="button active"
+              onclick="showSection('atracoes-section'),toggleExpanded(this)"
+            >
               ATRAÇÕES
             </button>
-            <button class="button" onclick="showSection('hospedagem-section')">
+            <button
+              class="button"
+              onclick="showSection('hospedagem-section'),toggleExpanded(this)"
+            >
               HOSPEDAGEM
             </button>
             <button class="button" onclick="showHide()">SERVIÇOS</button>
-            <button class="button" onclick="showSection('alimentacao-section')">
+            <button
+              class="button"
+              onclick="showSection('alimentacao-section'),toggleExpanded(this)"
+            >
               ALIMENTAÇÃO
             </button>
             <button class="button" onclick="showHide()">LAZER</button>

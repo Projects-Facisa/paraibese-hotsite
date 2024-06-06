@@ -37,10 +37,6 @@ body {
   flex: 1;
   min-width: 250px;
 }
-#atracoes-section {
-  display: grid;
-}
-
 .text-block {
   background: #fff;
   padding: 20px;
@@ -125,6 +121,10 @@ body {
   font-style: normal;
   border: none;
   cursor: pointer;
+}
+
+.active {
+  background-color: #f0ebc6;
 }
 
 .button:hover {
