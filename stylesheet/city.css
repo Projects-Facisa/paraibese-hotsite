@@ -37,6 +37,9 @@ body {
   flex: 1;
   min-width: 250px;
 }
+#atracoes-section {
+  display: grid;
+}
 
 .text-block {
   background: #fff;
@@ -62,12 +65,12 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 0.9em;
-  color: gray;
+  color: black;
 }
 
 .carousel {
   margin-bottom: 3%;
-  margin-top:1%;
+  margin-top: 1%;
 }
 
 .carousel-cell {
@@ -79,7 +82,7 @@ body {
   background-position: center center;
 }
 
-.city{
+.city {
   width: 25%;
   height: 250px;
 }
@@ -120,10 +123,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   font-style: normal;
+  border: none;
+  cursor: pointer;
 }
-#atrac {
-  background: #f0ebc6;
-}
+
 .button:hover {
   background: #f0ebc6;
 }
@@ -133,4 +136,7 @@ body {
   font-weight: 300;
   font-style: normal;
   font-size: 2em;
+}
+.section {
+  display: none;
 }

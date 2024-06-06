@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Campina Grande</title>
-    <link rel="icon" href="../sources/footer-header-icons/iconpb.png">
+    <link rel="icon" href="../sources/footer-header-icons/iconpb.png" />
 
     <link
       rel="stylesheet"
@@ -15,7 +15,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-
+    <link rel="stylesheet" href="../stylesheet/alimentacao.css" />
+    <link rel="stylesheet" href="../stylesheet/hospedagem.css" />
     <link href="../stylesheet/page.css" rel="stylesheet" />
     <link href="../stylesheet/city.css" rel="stylesheet" />
     <link href="../stylesheet/style.css" rel="stylesheet" />
@@ -96,11 +97,11 @@
               </p>
               <div class="views-likes">
                 <div>
-                  <i class="fa-regular fa-eye"></i>
+                  <i class="fa-regular fa-eye view-icon"></i>
                   <span>4228 VIEWS</span>
                 </div>
                 <div>
-                  <i class="fa-regular fa-heart"></i>
+                  <i class="fa-regular fa-heart view-icon"></i>
                   <span>3423 LIKES</span>
                 </div>
               </div>
@@ -161,16 +162,22 @@
             lugar irresistível para explorar.
           </p>
           <div class="button-container">
-            <a href="campina.html" class="button" id="atrac">ATRAÇÕES</a>
-            <a href="hospedagem.html" class="button">HOSPEDAGEM</a>
-            <a href="#" class="button">SERVIÇOS</a>
-            <a href="#" class="button">ALIMENTAÇÃO</a>
-            <a href="#" class="button">LAZER</a>
-            <a href="#" class="button">ROTEIROS</a>
-            <a href="#" class="button">EVENTOS</a>
+            <button class="button" onclick="showSection('atracoes-section')">
+              ATRAÇÕES
+            </button>
+            <button class="button" onclick="showSection('hospedagem-section')">
+              HOSPEDAGEM
+            </button>
+            <button class="button" onclick="showHide()">SERVIÇOS</button>
+            <button class="button" onclick="showSection('alimentacao-section')">
+              ALIMENTAÇÃO
+            </button>
+            <button class="button" onclick="showHide()">LAZER</button>
+            <button class="button" onclick="showHide()">ROTEIROS</button>
+            <button class="button" onclick="showHide()">EVENTOS</button>
           </div>
         </div>
-        <div class="atracoes-section">
+        <div id="atracoes-section" class="section">
           <p class="atracoes">Atrações culturais em Campina Grande</p>
           <div class="carousel-section">
             <div
@@ -205,13 +212,13 @@
                 class="carousel-cell city"
                 style="
                   background-image: url('../sources/cidades/imagens-paraibese/campina/atracoes-culturais/campina5.jpg');
-                  "
+                "
               ></div>
               <div
                 class="carousel-cell city"
                 style="
                   background-image: url('../sources/cidades/imagens-paraibese/campina/atracoes-culturais/campina6.jpg');
-                  "
+                "
               ></div>
             </div>
           </div>
@@ -260,6 +267,189 @@
             </div>
           </div>
         </div>
+        <div id="hospedagem-section" class="section">
+          <div class="card-hospedagem">
+            <div class="img-hospedagem">
+              <img src="../sources/hospedagens-img/Garden.jpg" alt="" />
+            </div>
+            <div class="description-hospedagem">
+              <h3 description-title>Garden Hotel</h3>
+              <p class="localizacao-hospedagem">
+                <a href="">Campina Grande</a> 2,2 km do centro
+              </p>
+              <p class="description-p">
+                O Garden Hotel oferece quartos elegantes e várias opções de
+                lazer em Campina Grande. Você pode desfrutar do parque aquático,
+                quadras de tênis, salão de jogos e 5 piscinas.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://www.booking.com/hotel/br/garden.pt-br.html"
+                  target="_blank"
+                  >Visualizar Reservas ></a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card-hospedagem">
+            <div class="img-hospedagem">
+              <img src="../sources/hospedagens-img/Hotel-do-vale.jpg" alt="" />
+            </div>
+            <div class="description-hospedagem">
+              <h3 description-title>Hotel do Vale</h3>
+              <p class="localizacao-hospedagem">
+                <a href="">Campina Grande</a> 1 km do centro
+              </p>
+              <p class="description-p">
+                Localizado em Campina Grande, Paraíba, o Hotel do Vale está
+                situado a 5,9 km do Estádio Amigao. A propriedade oferece
+                restaurante, serviço de quarto, recepção 24 horas e Wi-Fi
+                gratuito.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://www.booking.com/hotel/br/do-vale-ltda-campina-grande.pt-br.html"
+                  target="_blank"
+                  >Visualizar Reservas ></a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card-hospedagem">
+            <div class="img-hospedagem">
+              <img src="../sources/hospedagens-img/Intercity.jpg" alt="" />
+            </div>
+            <div class="description-hospedagem">
+              <h3 description-title>Intercity Campina Grande Citymix</h3>
+              <p class="localizacao-hospedagem">
+                <a href="">Campina Grande</a> 1,6 km do centro
+              </p>
+              <p class="description-p">
+                Localizado em Campina Grande, a 5,8 km do Estádio Amigao, o
+                Intercity Campina Grande Citymix oferece acomodações com
+                academia, estacionamento privativo gratuito, restaurante e bar.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://www.booking.com/hotel/br/interciy-campina-grande.pt-br.html"
+                  target="_blank"
+                  >Visualizar Reservas ></a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card-hospedagem">
+            <div class="img-hospedagem">
+              <img src="../sources/hospedagens-img/Village.jpg" alt="" />
+            </div>
+            <div class="description-hospedagem">
+              <h3 description-title>Hotel Village Confort Campina Grande</h3>
+              <p class="localizacao-hospedagem">
+                <a href="">Campina Grande</a> 150 m do centro
+              </p>
+              <p class="description-p">
+                O Hotel Village Confort Campina Grande oferece quartos
+                espaçosos, buffet de café da manhã e um elevador panorâmico com
+                vista do Lago Açude Velho.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://www.booking.com/hotel/br/village-confort-campina-grande.pt-br.html"
+                  target="_blank"
+                  >Visualizar Reservas ></a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="alimentacao-section" class="section">
+          <div class="alimentacao-card">
+            <div class="restaurante-logo">
+              <img src="../sources/logo-restaurantes/BDC.png" alt="" />
+            </div>
+            <div class="restaurante-description">
+              <h3>BAR DO CUSCUZ</h3>
+              <span class="categoria">Bares e pubs, Steakhouse</span>
+              <br />
+              <span class="endereco"> R. Dr. Severino Cruz, 771 - Centro </span>
+              <p>
+                "Vale a pena conhecer."
+                <br />
+                "Cuscuz raiz."
+              </p>
+              <a href="https://www.instagram.com/bardocuscuzcg/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="alimentacao-card">
+            <div class="restaurante-logo">
+              <img
+                src="../sources/logo-restaurantes/manoel-da-carne-de-sol.jpg"
+                alt=""
+              />
+            </div>
+            <div class="restaurante-description">
+              <h3>MANOEL DA CARNE DE SOL</h3>
+              <span class="categoria">Brasileira</span>
+              <br />
+              <span class="endereco"> R. Félix Araújo, 263 - Centro </span>
+              <p>
+                "Surpreendente como Campina Grande"
+                <br />
+                "Comida regional de primeira!"
+              </p>
+              <a href="https://www.instagram.com/manoeldacarnedesol/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="alimentacao-card">
+            <div class="restaurante-logo">
+              <img
+                src="../sources/logo-restaurantes/sapore-d-italia.jfif"
+                alt=""
+              />
+            </div>
+            <div class="restaurante-description">
+              <h3>SAPORE D'ITALIA</h3>
+              <span class="categoria">Pizzaria</span>
+              <br />
+              <span class="endereco">
+                R. Santo Antônio, 74 - Santo Antônio
+              </span>
+              <p>
+                "Pizza deliciosa"
+                <br />
+                "Pizza muito boa"
+              </p>
+              <a href="https://www.instagram.com/saporecg/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="alimentacao-card">
+            <div class="restaurante-logo">
+              <img src="../sources/logo-restaurantes/the-W.jpg" alt="" />
+            </div>
+            <div class="restaurante-description">
+              <h3>THE W RESTAURANTE</h3>
+              <span class="categoria">Contemporânea</span>
+              <br />
+              <span class="endereco">
+                Av. Manoel Tavares, 455 - Alto Branco
+              </span>
+              <p>
+                "Muito bom"
+                <br />
+                "Excelente refeição"
+              </p>
+              <a href="https://www.instagram.com/thewrestaurante/"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- MAIN END -->
 
@@ -289,5 +479,6 @@
     <!-- BODY CONTENT END-->
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="../scripts/footerNheader.js"></script>
+    <script src="../scripts/city.js"></script>
   </body>
 </html>
