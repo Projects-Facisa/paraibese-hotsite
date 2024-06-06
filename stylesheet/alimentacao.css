@@ -45,9 +45,14 @@
     right: 5px;
     font-size: 1.6em;
     cursor: pointer;
+    opacity: 0.8;
+    background: linear-gradient(115deg, #f9ce34, #ee2a7b, #6228d7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   & .bi.bi-instagram:hover {
-    color: #3f729b;
+    opacity: 1;
+    transition: 0.4s;
   }
 }
 
