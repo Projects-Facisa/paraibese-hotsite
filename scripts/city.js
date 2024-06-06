@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     var sectionToShow = document.getElementById(sectionId);
     sectionToShow.style.display = "grid";
+    sectionToShow.style.animation = "fadeIn 1s";
 
     var carousels = sectionToShow.getElementsByClassName("carousel");
     for (var j = 0; j < carousels.length; j++) {

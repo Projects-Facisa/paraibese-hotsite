@@ -147,3 +147,18 @@ body {
 .section {
   display: none;
 }
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.view-icon {
+  transition: transform 0.3s ease;
+}
+
+.view-icon:hover {
+  transform: scale(1.2);
+}

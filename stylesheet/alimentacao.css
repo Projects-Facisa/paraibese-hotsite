@@ -51,8 +51,8 @@
     -webkit-text-fill-color: transparent;
   }
   & .bi.bi-instagram:hover {
-    opacity: 1;
     transition: 0.4s;
+    opacity: 1;
   }
 }
 
