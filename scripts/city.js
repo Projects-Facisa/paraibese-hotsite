@@ -55,3 +55,13 @@ function toggleExpanded(element) {
   });
   element.closest(".button").classList.add("active");
 }
+
+function toggleReadMore() {
+  const paragrafo = document.querySelector('.info-section p');
+  paragrafo.classList.toggle('expanded');
+  const button = document.querySelector('.read-more');
+  const buttonReadMore = document.querySelector('.button-readmore');
+
+  button.textContent = paragrafo.classList.contains('expanded') ? 'Leia menos' : 'Leia mais';
+  buttonReadMore.classList.toggle('expanded', paragrafo.classList.contains('expanded'));
+}

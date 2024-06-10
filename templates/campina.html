@@ -161,30 +161,33 @@
             lazer, oferecendo atividades para todos os gostos e se tornando um
             lugar irresistível para explorar.
           </p>
-          <div class="button-container">
-            <button
-              class="button active"
-              onclick="showSection('atracoes-section'),toggleExpanded(this)"
-            >
-              ATRAÇÕES
-            </button>
-            <button
-              class="button"
-              onclick="showSection('hospedagem-section'),toggleExpanded(this)"
-            >
-              HOSPEDAGEM
-            </button>
-            <button class="button" onclick="showHide()">SERVIÇOS</button>
-            <button
-              class="button"
-              onclick="showSection('alimentacao-section'),toggleExpanded(this)"
-            >
-              ALIMENTAÇÃO
-            </button>
-            <button class="button" onclick="showHide()">LAZER</button>
-            <button class="button" onclick="showHide()">ROTEIROS</button>
-            <button class="button" onclick="showHide()">EVENTOS</button>
+          <div class="button-readmore">
+          <span class="read-more" onclick="toggleReadMore()">Leia mais</span>
           </div>
+        </div>
+        <div class="button-container">
+          <button
+            class="button active"
+            onclick="showSection('atracoes-section'),toggleExpanded(this)"
+          >
+            ATRAÇÕES
+          </button>
+          <button
+            class="button"
+            onclick="showSection('hospedagem-section'),toggleExpanded(this)"
+          >
+            HOSPEDAGEM
+          </button>
+          <button class="button" onclick="showHide()">SERVIÇOS</button>
+          <button
+            class="button"
+            onclick="showSection('alimentacao-section'),toggleExpanded(this)"
+          >
+            ALIMENTAÇÃO
+          </button>
+          <button class="button" onclick="showHide()">LAZER</button>
+          <button class="button" onclick="showHide()">ROTEIROS</button>
+          <button class="button" onclick="showHide()">EVENTOS</button>
         </div>
         <div id="atracoes-section" class="section">
           <p class="atracoes">Atrações culturais em Campina Grande</p>

@@ -91,9 +91,10 @@ body {
 }
 
 .info-section {
+  position: relative;
   border-radius: 10px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .info-section p {
@@ -102,6 +103,16 @@ body {
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: normal;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  position: relative;
+  z-index: 1;
+}
+
+.info-section p.expanded {
+  -webkit-line-clamp: unset;
 }
 
 .button-container {
@@ -161,4 +172,45 @@ body {
 
 .view-icon:hover {
   transform: scale(1.2);
+}
+
+.button-readmore {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  z-index: 2;
+  overflow: hidden;
+  height: 60px;
+}
+
+.button-readmore::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  opacity: 0.7;
+  z-index: -1;
+}
+
+.button-readmore.expanded::before {
+  opacity: 1;
+}
+
+.read-more {
+  position: absolute;
+  right: 50%;
+  bottom: 0px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  font-size: 1.4em;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  border: none;
+  cursor: pointer;
 }
