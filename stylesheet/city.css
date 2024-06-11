@@ -99,21 +99,21 @@ body {
 
 .info-section p {
   font-size: 1.3em;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: normal;
   overflow: hidden;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
   position: relative;
   z-index: 1;
+  transition: max-height 1s ease;
+  max-height: 4.5em;
 }
 
 .info-section p.expanded {
-  -webkit-line-clamp: unset;
+  max-height: 570px;
 }
+
 
 .button-container {
   margin-top: 30px;
@@ -186,7 +186,7 @@ body {
   bottom: 0px;
   z-index: 2;
   overflow: hidden;
-  height: 70px;
+  height: 90px;
   transition: bottom 4s; 
 }
 
@@ -200,10 +200,16 @@ body {
   background-color: white;
   opacity: 0.7;
   z-index: -1;
+  transition: opacity 0.5s;
 }
 
 .button-readmore.expanded::before {
   opacity: 0;
+  transition-delay: 0s;
+}
+
+.button-readmore:not(.expanded)::before {
+  transition-delay: 0.8s;
 }
 
 .read-more {
