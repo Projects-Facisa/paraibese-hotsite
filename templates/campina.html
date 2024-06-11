@@ -20,6 +20,7 @@
     <link href="../stylesheet/page.css" rel="stylesheet" />
     <link href="../stylesheet/city.css" rel="stylesheet" />
     <link href="../stylesheet/style.css" rel="stylesheet" />
+    <link href="../stylesheet/servicos.css" rel="stylesheet">
 
     <script
       src="https://kit.fontawesome.com/49272a6f5a.js"
@@ -135,32 +136,35 @@
         </div>
         <div class="info-section">
           <p>
-            Boqueirão, na Paraíba, é uma cidade cheia de encantos naturais e
-            culturais. Além do famoso Açude Epitácio Pessoa, o segundo maior da
-            Paraíba, a cidade oferece diversas outras atrações turísticas que
-            valem a visita. Entre os destaques está o Lajedo do Marinho,
-            conhecido por suas impressionantes formações rochosas e grafismos
-            rupestres que encantam os visitantes. As Crocheteiras do Marinho são
-            outro ponto de interesse, um grupo de mulheres que produzem
-            artesanato em crochê de alta qualidade, já reconhecido até em
-            eventos como o São Paulo Fashion Week. A Igreja Matriz Nossa Senhora
-            do Desterro é uma parada obrigatória para os amantes de história e
-            arquitetura, oferecendo uma vista deslumbrante e um mergulho na
-            história local. Para momentos de lazer, a Praça de Eventos de
-            Boqueirão é um espaço vibrante, ideal para passeios e eventos ao ar
-            livre. O Mercado Municipal Ernesto Heráclito do Rêgo é perfeito para
-            quem deseja conhecer mais da culinária e produtos locais. Para os
-            mais aventureiros, a Serra de Cornoió oferece trilhas desafiadoras
-            com vistas panorâmicas espetaculares. Não deixe de visitar também a
-            Barragem de Boqueirão, onde você pode apreciar a beleza do cenário e
-            entender a importância deste reservatório para a região. Ao final do
-            dia, assistir ao pôr do sol ao som da Ave Maria Sertaneja, seguido
-            de uma noite ao redor da fogueira com música de sanfoneiro e um
-            jantar preparado no fogo à lenha, proporciona uma experiência
-            inesquecível. Boqueirão é um destino que combina natureza, cultura e
-            lazer, oferecendo atividades para todos os gostos e se tornando um
-            lugar irresistível para explorar.
-          </p>
+            <span>
+              Boqueirão, na Paraíba, é uma cidade cheia de encantos naturais e
+              culturais. Além do famoso Açude Epitácio Pessoa, o segundo maior da
+              Paraíba, a cidade oferece diversas outras atrações turísticas que valem a visita.
+              Entre os destaques está o Lajedo do Marinho,
+              conhecido por suas impressionantes formações rochosas e grafismos
+              rupestres que encantam os visitantes. As Crocheteiras do Marinho são
+              outro ponto de interesse, um grupo de mulheres que produzem
+              artesanato em crochê de alta qualidade, já reconhecido até em
+              eventos como o São Paulo Fashion Week. 
+              <br><br>
+              A Igreja Matriz Nossa Senhora do Desterro é uma parada obrigatória para os amantes de história e
+              arquitetura, oferecendo uma vista deslumbrante e um mergulho na
+              história local. Para momentos de lazer, a Praça de Eventos de
+              Boqueirão é um espaço vibrante, ideal para passeios e eventos ao ar
+              livre. O Mercado Municipal Ernesto Heráclito do Rêgo é perfeito para
+              quem deseja conhecer mais da culinária e produtos locais. Para os
+              mais aventureiros, a Serra de Cornoió oferece trilhas desafiadoras
+              com vistas panorâmicas espetaculares.
+              <br><br>
+              Não deixe de visitar também a Barragem de Boqueirão, onde você pode apreciar a beleza do cenário e
+              entender a importância deste reservatório para a região. Ao final do
+              dia, assistir ao pôr do sol ao som da Ave Maria Sertaneja, seguido
+              de uma noite ao redor da fogueira com música de sanfoneiro e um
+              jantar preparado no fogo à lenha, proporciona uma experiência
+              inesquecível. Boqueirão é um destino que combina natureza, cultura e
+              lazer, oferecendo atividades para todos os gostos e se tornando um
+              lugar irresistível para explorar.
+            </span>
           <div class="button-readmore">
           <span class="read-more" onclick="toggleReadMore()">Leia mais</span>
           </div>
@@ -178,7 +182,10 @@
           >
             HOSPEDAGEM
           </button>
-          <button class="button" onclick="showHide()">SERVIÇOS</button>
+          <button 
+            class="button"
+            onclick="showSection('servicos-section'),toggleExpanded(this)"
+          >SERVIÇOS</button>
           <button
             class="button"
             onclick="showSection('alimentacao-section'),toggleExpanded(this)"
@@ -189,6 +196,8 @@
           <button class="button" onclick="showHide()">ROTEIROS</button>
           <button class="button" onclick="showHide()">EVENTOS</button>
         </div>
+
+        <!-- ----------- ATRACOES-SECTION -------------- -->
         <div id="atracoes-section" class="section">
           <p class="atracoes">Atrações culturais em Campina Grande</p>
           <div class="carousel-section">
@@ -279,6 +288,8 @@
             </div>
           </div>
         </div>
+
+        <!-- ------------- HOSPEDAGEM-SECTION ---------------- -->
         <div id="hospedagem-section" class="section">
           <div class="card-hospedagem">
             <div class="img-hospedagem">
@@ -374,6 +385,248 @@
             </div>
           </div>
         </div>
+
+        <!-- ---------- SERVICOS-SECTION ------------  -->
+        <div id="servicos-section" class="section">
+            <details>
+                <summary>Hospitais 🚑 (3)</summary>
+                <ul>
+                    <li>
+                        <a href="https://maps.app.goo.gl/BmtjG7epXmAa4zA18" target="_blank">
+                            <h3>Hospital de Emergência e Trauma Dom Luiz Gonzaga Fernandes</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Av. Mal. Floriano Peixoto, 1045 - Malvinas, Campina Grande - PB, 58428-111</span>
+                            <span><strong>TELEFONE: </strong> (83) 3310-5850</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/EkzooTF3E2s1ytaX8" target="_blank">
+                            <h3>HELP - Hospital de Ensino e Laboratórios de Pesquisa</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Heronides da Costa Cirne, 250 - Serrotão, Campina Grande - PB, 58434-505</span>
+                            <span><strong>TELEFONE: </strong> (83) 3063-9960</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/7wbj3LRaXQT54WFdA" target="_blank">        
+                            <h3>Hospital Municipal Dr. Edgley Maciel</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Dom Bosco, S/N - José Pinheiro, Campina Grande - PB, 58407-425</span>
+                            <span><strong>TELEFONE: </strong> (83) 3342-9363</span>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary>Aeroporto ✈ (1)</summary>
+                <ul>
+                    <li>
+                        <a href="https://maps.app.goo.gl/xdGb7LRu3W9jEum37" target="_blank">
+                            <h3>Aeroporto Presidente João Suassuna</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Av. Uberaba, S/N - Distrito Industrial, Campina Grande - PB, 58418-410</span>
+                            <span><strong>TELEFONE: </strong> (83) 3332-9000</span>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary>Delegacias 🚓 (9)</summary>
+                <ul>
+                    <li>
+                        <a href="https://maps.app.goo.gl/z6bwRSXMvA7bncZU9" target="_blank">
+                            <h3>1ª DELEGACIA DISTRITAL</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Vig. Virgínio, 488 - Jardim Tavares, Campina Grande - PB, 58402-013</span>
+                            <span><strong>TELEFONE: </strong> (83) 3342-8635</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/4daaSbGYLfwbqPGm8" target="_blank">
+                            <h3>2ª DELEGACIA DISTRITAL</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Lino Gomes da Silva, 39 - Centro, Campina Grande - PB, 58400-360</span>
+                            <span><strong>TELEFONE: </strong> (83) 3310-9343</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/HkdgjLzdYGVvJjka6" target="_blank">        
+                            <h3>3ª DELEGACIA DISTRITAL</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Av. Pres. Getúlio Vargas, 907 - Centro, Campina Grande - PB, 58400-585</span>
+                            <span><strong>TELEFONE: </strong> (83) 3342-4591</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/5MthcqqhNoWy5s2Z7" target="_blank">        
+                            <h3>4ª DELEGACIA DISTRITAL</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Alcides Avelino de Medeiros, 549 - Serrotão, Campina Grande - PB, 58434-640</span>
+                            <span><strong>TELEFONE: </strong> (83) 3339-6906</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/jt1mmaKRLcDHCtaNA" target="_blank">        
+                            <h3>6ª DELEGACIA DISTRITAL</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. João Quirino, 476 - Catolé, Campina Grande - PB, 58410-370</span>
+                            <span><strong>TELEFONE: </strong> (83) 3337-5052</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/rTMSWonyY3nF3M8BA" target="_blank">        
+                            <h3>7ª DELEGACIA DISTRITAL</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Dr. Acácio Figueiredo, 1021 - Acácio Figueiredo, Campina Grande - PB, 58421-210</span>
+                            <span><strong>TELEFONE: </strong> (83) 3322-9568</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/crYjRXC9dyvCcoKh9" target="_blank">        
+                            <h3>DELEGACIA DA INFÂNCIA E JUVENTUDE</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Catolé, Campina Grande - PB, 58410-205</span>
+                            <span><strong>TELEFONE: </strong> (83) 3310-9316</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/5mckP3LBEfdMcZT39" target="_blank">        
+                            <h3>DELEGACIA DA MULHER</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Raimundo Nonato de Araújo, 485-629 - Catolé, Campina Grande - PB, 58407-530</span>
+                            <span><strong>TELEFONE: </strong> (83) 3310-9300</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/7aDdEL6tGzMgGtxc7" target="_blank">        
+                            <h3>DELEGACIA DO IDOSO</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Dom Pedro I, 117 - São José, Campina Grande - PB, 58400-414</span>
+                            <span><strong>TELEFONE: </strong> (83) 3337-7337</span>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary>Rodoviarias 🚌 (2)</summary>
+                <ul>
+                    <li>
+                        <a href="https://maps.app.goo.gl/o8A1F6PX7G3TfYt29" target="_blank">
+                            <h3>Terminal Rodoviário de Campina Grande</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Basílio Araújo - Sandra Cavalcante, Campina Grande - PB, 58410-637</span>
+                            <span><strong>TELEFONE: </strong> (83) 3337-3239</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/PHrJiPaCNk9uh11E9" target="_blank">
+                            <h3>RODOVIÁRIA VELHA OFICIAL</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Praça Lauritzen, 07 - Centro, Campina Grande - PB, 58400-140</span>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary>UPAs 🩺 (2)</summary>
+                <ul>
+                    <li>
+                        <a href="https://maps.app.goo.gl/gyQs1V8zaquUtb9J7" target="_blank">
+                            <h3>UPA - Alto Branco</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Alto Branco, Campina Grande - PB</span>
+                            <span><strong>TELEFONE: </strong> (83) 3341-2079</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/cUakt5h9sCmpwcDH7" target="_blank">
+                            <h3>UPA Adhemar Dantas (Dinamérica)</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Santa Cruz, Campina Grande - PB, 58416-680</span>
+                            <span><strong>TELEFONE: </strong> (83) 3065-8187</span>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+            <details>
+                <summary>Cidadania 🧑‍⚖️ (3)</summary>
+                <ul>
+                    <li>
+                        <a href="https://maps.app.goo.gl/vh9Zuy3RxjQh8D6y6" target="_blank">
+                            <h3>Casa da Cidadania</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Dr. Severino Cruz, 283 - Centro, Campina Grande - PB, 58400-248</span>
+                            <span><strong>TELEFONE: </strong> (83) 3310-9433</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/zcnqReeFTbUGBYd57" target="_blank">
+                            <h3>1° Cartório de Registro Civil das Pessoas Naturais</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Av. Mal. Floriano Peixoto, 813 - Centro, Campina Grande - PB, 58400-165</span>
+                            <span><strong>TELEFONE: </strong> (83) 3321-4598</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/aXTxBd8c5s2mzRN26" target="_blank">        
+                            <h3>Cartório Extra Judicial</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Av. Mal. Floriano Peixoto, 794 - Centenário, Campina Grande - PB, 58400-180</span>
+                            <span><strong>TELEFONE: </strong> (83) 3322-1243</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/bb5qRm8X9Y5ZHGxc7" target="_blank">        
+                            <h3>1º Ofício de Registro de Imóveis e 1º Tabelionato de Protesto de Títulos e Documentos da Comarca de Campina Grande</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>R. Vidal de Negreiros, 70 - Centro, Campina Grande - PB, 58400-263</span>
+                            <span><strong>TELEFONE: </strong> (83) 3088-5570</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/BdyYGK7o5bPhT7gC9" target="_blank">        
+                            <h3>2º Cartório de Registro Civil</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Praça Clementino Procópio, 119 - Centro, Campina Grande - PB, 58400-292</span>
+                            <span><strong>TELEFONE: </strong> (83) 99947-7385</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://maps.app.goo.gl/j7aNSjZBpC8GVDdE7" target="_blank">        
+                            <h3>Fórum Afonso Campos</h3>
+                        </a>
+                        <div class="description-li">
+                            <span><strong>Endereço: </strong>Estacao Velha, Campina Grande - PB, 58410-052</span>
+                            <span><strong>TELEFONE: </strong> (83) 98793-7088</span>
+                        </div>
+                    </li>
+                </ul>
+            </details>
+        </div>
+
+        <!-- ------------ ALIMENTACAO-SECTION --------------- -->
         <div id="alimentacao-section" class="section">
           <div class="alimentacao-card">
             <div class="restaurante-logo">
@@ -390,6 +643,7 @@
                 "Cuscuz raiz."
               </p>
               <a href="https://www.instagram.com/bardocuscuzcg/"
+                target="_blank"
                 ><i class="bi bi-instagram"></i
               ></a>
             </div>
@@ -412,6 +666,7 @@
                 "Comida regional de primeira!"
               </p>
               <a href="https://www.instagram.com/manoeldacarnedesol/"
+                target="_blank"
                 ><i class="bi bi-instagram"></i
               ></a>
             </div>
@@ -436,6 +691,7 @@
                 "Pizza muito boa"
               </p>
               <a href="https://www.instagram.com/saporecg/"
+                target="_blank"
                 ><i class="bi bi-instagram"></i
               ></a>
             </div>
@@ -457,6 +713,7 @@
                 "Excelente refeição"
               </p>
               <a href="https://www.instagram.com/thewrestaurante/"
+                target="_blank"
                 ><i class="bi bi-instagram"></i
               ></a>
             </div>
