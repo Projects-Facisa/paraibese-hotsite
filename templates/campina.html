@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link rel="stylesheet" href="../stylesheet/roteiro.css" />
     <link rel="stylesheet" href="../stylesheet/cards.css" />
     <link href="../stylesheet/page.css" rel="stylesheet" />
     <link href="../stylesheet/city.css" rel="stylesheet" />
@@ -216,7 +217,12 @@
             ALIMENTAÇÃO
           </button>
           <button class="button" onclick="showHide()">LAZER</button>
-          <button class="button" onclick="showHide()">ROTEIROS</button>
+          <button
+            class="button"
+            onclick="showSection('roteiro-section'),toggleExpanded(this)"
+          >
+            ROTEIRO
+          </button>
           <button class="button" onclick="showHide()">EVENTOS</button>
         </div>
 
@@ -325,7 +331,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.1
               </span>
               <br />
               <span class="endereco">R. Eng. José Bezerra, 400 - Mirante</span>
@@ -353,8 +360,9 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
                 <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                4.0
               </span>
               <br />
               <span class="endereco">R. Cleiton Ismael, N° 10 - Lauritzen</span>
@@ -382,8 +390,9 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.3
               </span>
               <br />
               <span class="endereco">Av. Barão Rio Branco, 370 - Centro</span>
@@ -412,7 +421,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.6
               </span>
               <br />
               <span class="endereco"
@@ -436,9 +446,10 @@
         <div id="servicos-section" class="section">
           <details>
             <summary>
-              Hospitais (3)
+              <span
+                >Hospitais <i class="fa-solid fa-truck-medical"></i> (3)</span
+              >
               <br />
-              <i class="fa-solid fa-truck-medical"></i>
             </summary>
             <ul>
               <li>
@@ -491,7 +502,7 @@
             </ul>
           </details>
           <details>
-            <summary>Aeroporto (1)</summary>
+            <summary><span>Aeroporto <i class="fa-solid fa-plane"></i> (1)</span></summary>
             <ul>
               <li>
                 <a
@@ -511,7 +522,7 @@
             </ul>
           </details>
           <details>
-            <summary>Delegacias (9)</summary>
+            <summary><span>Delegacias <i class="fa-solid fa-handcuffs"></i> (9)</span></summary>
             <ul>
               <li>
                 <a
@@ -651,7 +662,7 @@
             </ul>
           </details>
           <details>
-            <summary>Rodoviarias (2)</summary>
+            <summary><span>Rodoviarias <i class="fa-solid fa-bus"></i> (2)</span></summary>
             <ul>
               <li>
                 <a
@@ -685,7 +696,7 @@
             </ul>
           </details>
           <details>
-            <summary>UPAs (2)</summary>
+            <summary><span>UPAs <i class="fa-solid fa-stethoscope"></i> (2)</span></summary>
             <ul>
               <li>
                 <a
@@ -720,7 +731,7 @@
             </ul>
           </details>
           <details>
-            <summary>Cidadania (3)</summary>
+            <summary><span>Cidadania <i class="fa-regular fa-address-card"></i> (3)</span></summary>
             <ul>
               <li>
                 <a
@@ -833,7 +844,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                       4.4
               </span>
               <br />
               <span class="endereco"> R. Dr. Severino Cruz, 771 - Centro </span>
@@ -861,7 +873,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.6
               </span>
               <br />
               <span class="endereco"> R. Félix Araújo, 263 - Centro </span>
@@ -891,7 +904,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.7
               </span>
               <br />
               <span class="endereco"> R. Irineu Joffily, 290 - Centro </span>
@@ -918,7 +932,8 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.7
               </span>
               <br />
               <span class="endereco">
@@ -939,6 +954,92 @@
               ></a>
             </div>
           </div>
+        </div>
+        <!-- ------------ ROTEIRO-SECTION --------------- -->
+        <div id="roteiro-section" class="section">
+          <p>
+            Não é à toa que Campina Grande é intitulada como a Rainha da
+            Borborema. Charmosa e acolhedora, tem sua gastronomia marcante e a
+            alegria é contagiante. Visitaremos os principais pontos da cidade
+            onde acontece o Maior São João do Mundo.
+            <img class="img-right"
+              src="../sources/cidades/imagens-paraibese/campina/campina-main.jpg"
+              alt="Campina Grande"
+            />
+            Às margens do Açude Velho, visitaremos o moderno Museu de Arte
+            Popular da Paraíba, projetado pelo arquiteto Oscar Niemeyer e pelo
+            monumento Farra da Bodega, uma homenagem ao Rei do Baião Luíz
+            Gonzaga e ao Rei do Ritmo, Jackson do Pandeiro. Seguiremos passando
+            pela antiga estação ferroviária, onde hoje funciona o museu do
+            algodão, afinal aqui, com exclusividade, o algodão já nasce
+            colorido. Passaremos pelo Parque do Povo, onde acontece, no mês de
+            junho, o Maior São João do mundo! Seguiremos até a Catedral da
+            cidade para pedir a bênção a Nossa Senhora da Conceição! Depois, uma
+            paradinha pra forrar o bucho no Bar do Cuscuz, o restaurante mais
+            tradicional da cidade, onde a sugestão será a famosa Carne de Sol na
+            Nata e, claro, o cuscuz! Seguiremos para o tecnológico Museu Digital
+            do Sesi, que tornou Campina Grande uma Cidade Criativa UNESCO em
+            Artes Midiáticas. Lá conheceremos a história de Campina Grande desde
+            a época da Vila Nova da Rainha e a importância do ciclo algodoeiro,
+            de forma interativa e divertida.
+          </p>
+          <p>
+            Em uma noite de celebração à gastronomia nordestina, o Cumpade João
+            <img class="img-left"
+              src="../sources/cidades/imagens-paraibese/campina/campina-main.jpg"
+              alt="Campina Grande"
+            />
+            abre as portas da sua casa e nos recebe na sua aconchegante varanda
+            com um jantar impecável com o sabor da nossa terra. Com clima de
+            interior, o Chef Cumpade João irá preparar o jantar regado a muita
+            cantoria e talento. Ele, em 2018 ganhou o prêmio Dólmã na categoria
+            nacional, faz uma perfeita mistura na gastronomia contemporânea
+            regional com pratos autorais misturando elementos do bioma da
+            Caatinga ressignificando receitas consagradas mundialmente, regado a
+            drinks de cachaças premiadas da Paraíba. Uma noite que une sabor,
+            tradição e todo aconchego do interior.
+          </p>
+          <p>
+            Aqui é a terra do Maior São João do Mundo!! E pra que você possa ter
+            <img class="img-right"
+              src="../sources/cidades/imagens-paraibese/campina/campina-main.jpg"
+              alt="Campina Grande"
+            />
+            um gostinho do que essa festa significa pra gente, a Vila Sítio São
+            João abre as portas pra te receber e mostrar que, na verdade, nesta
+            terra se respira forró e tradições juninas o ano inteiro. Lá tem
+            muito arrasta-pé, cultura, história e animação. Um lugar de resgate
+            da cultura nordestina. Uma linda vilinha cinematográfica que retrata
+            a vida do interior com casas de taipas, casa da farinha, engenhos,
+            igreja, bodega, fogueira, artesanato, forró pé de serra e comida
+            típica. Ainda vai se divertir com as apresentações das quadrilhas
+            juninas.
+          </p>
+          <p>
+            Nosso destino é para um lugar de encher os olhos e o coração!
+            Passaremos o dia na Fazenda Olho d’ água e quem abre as portas para
+            nos receber é o premiado Chef Cumpade João, embaixador da
+            gastronomia paraibana com participação em diversos programas de TV,
+            autor do prato Romeu e Juliette, em homenagem à vencedora do BBB
+            <img class="img-left"
+              src="../sources/cidades/imagens-paraibese/campina/campina-main.jpg"
+              alt="Campina Grande"
+            />
+            2021. Teremos um dia de vivência na fazenda. Você terá a
+            possibilidade de fazer uma linda cavalgada na companhia do Cumpade,
+            contemplando a natureza, ouvindo histórias do homem no campo, o
+            aboio sertanejo, rimas e versos, passando por riachos, vegetação
+            nativa totalmente preservada. Um tempo livre para conhecer a
+            simplicidade e o charme da vida rural. Poderá, ainda, fazer uma
+            caminhada pelo riacho, observar a natureza, pescaria com anzol e
+            tirar leite da vaca. Com energia renovada em sintonia com a natureza
+            é hora de encher o bucho com um almoço regional, incluindo sobremesa
+            com doce caseiro feito na própria fazenda. Tudo isso feito pelas
+            mãos do nosso renomado Chef que embala a sua cozinha ao som de
+            “repentes” e cantorias da nossa região. Depois do almoço, um
+            descanso merecido nas redes à sombra das árvores. Encerraremos com
+            um chá da tarde à beira do lago na encantadora Casa de Cumpade.
+          </p>
         </div>
       </div>
       <!-- MAIN END -->
