@@ -111,9 +111,8 @@ body {
 }
 
 .info-section p.expanded {
-  max-height: 570px;
+  max-height: 792px;
 }
-
 
 .button-container {
   margin-top: 30px;
@@ -187,7 +186,7 @@ body {
   z-index: 2;
   overflow: hidden;
   height: 90px;
-  transition: bottom 4s; 
+  transition: bottom 4s;
 }
 
 .button-readmore::before {
