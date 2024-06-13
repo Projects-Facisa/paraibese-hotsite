@@ -24,6 +24,17 @@ body {
   line-height: 1.6;
 }
 
+.main-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  grid-area: main;
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  grid-template-areas:
+    "explore"
+    "cidades";
+}
 .main-image {
   width: 100%;
   height: 300px;

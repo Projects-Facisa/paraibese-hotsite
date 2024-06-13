@@ -1,6 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,41 +14,38 @@ body {
 }
 
 .container {
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-/* MAIN CONTENT GRID */
 .main-content {
+  flex: 1;
   max-width: 1280px;
   margin: 0 auto;
-  grid-area: main;
-  display: grid;
-  grid-template-rows: auto;
+}
+
+.explore-section {
+  display: flex;
   align-items: center;
-  grid-template-areas:
-    "explore"
-    "cidades";
+  margin-top: 20px;
+}
+
+.explore-img {
+  flex: 1;
 }
 
 .explore-img > img {
-  margin-top: 15px;
   width: 85%;
-  height: 600px;
+  height: auto;
   border-radius: 15px;
 }
 
-.main-content > .explore-img {
-  grid-area: explore;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  & p {
-    max-width: 70%;
-    margin: 15px 0;
-  }
+.explore-text {
+  flex: 1;
+  padding: 20px;
+  line-height: 1.5;
+  color: #495057;
 }
 
 .carousel {
@@ -60,4 +62,18 @@ body {
   border-radius: 15px;
   background-size: cover;
   background-position: center center;
+}
+.title {
+  text-align: right;
+  margin-right: 70px;
+  margin-top: 70px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.title > span {
+  color: red;
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
