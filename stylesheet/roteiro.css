@@ -6,19 +6,25 @@
 
 #roteiro-section p {
   font-size: 1.3em;
-  margin-bottom: 70px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: normal;
+  border-bottom: 2px solid black;
 }
 
 .img-left {
   float: left;
   max-width: 400px;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .img-right {
     float: right;
     max-width: 400px;
+    margin-left: 20px;
+    margin-top: 10px;
   }
 
