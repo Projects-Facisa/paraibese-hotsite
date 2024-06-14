@@ -109,6 +109,11 @@ form button:hover {
     background-color: var(--primary-color)
 }
 
+form button a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .form-header {
     font-size: 20px;
     margin-bottom: 20px;

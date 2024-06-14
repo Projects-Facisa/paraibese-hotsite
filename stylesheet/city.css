@@ -43,6 +43,14 @@ body {
   margin: 15px 0;
 }
 
+#boqueirao-main-img {
+  object-position: 20% 70%;
+}
+
+#queimadas-main-img {
+  object-position: 20% 100%;
+}
+
 .content {
   display: flex;
   gap: 20px;
@@ -165,8 +173,7 @@ body {
 }
 
 .atracoes {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
+  font-weight: 600;
   font-style: normal;
   font-size: 2em;
 }
