@@ -1,3 +1,10 @@
+:root {
+  --primary-color: #ebdaa7;
+  --secondary-color: #dbc88d;
+  --tertiary-color: #ffffff;
+  --quartenary-color: #000000;
+}
+
 #roteiro-section {
   border-radius: 10px;
   margin-top: 50px;
@@ -7,11 +14,15 @@
 #roteiro-section p {
   font-size: 1.3em;
   margin-bottom: 40px;
-  padding-bottom: 30px;
+  padding-top: 30px;
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: normal;
-  border-bottom: 2px solid black;
+  border-top: 2px solid var(--secondary-color);
+}
+
+#roteiro-section img{
+  border: solid var(--secondary-color) 4px;
 }
 
 .img-left {
@@ -29,8 +40,8 @@
 }
 .timeline {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
+  margin: 0 auto 50px;
+  padding: 0 20px 20px;
   background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,11 +52,11 @@
   content: "";
   position: absolute;
   top: 0;
-  left: 30%;
+  left: 35%;
   transform: translateX(-50%);
   width: 4px;
   height: 100%;
-  background: #00c3ff;
+  background: var(--primary-color);
 }
 
 .timeline-event {
@@ -60,7 +71,7 @@
   font-weight: bold;
   color: #555;
   width: 100px;
-  text-align: right;
+  text-align: center;
 }
 
 .timeline-details {
@@ -71,7 +82,7 @@
 
 .timeline-title {
   font-size: 18px;
-  color: #007bff;
+  color: var(--secondary-color);
 }
 
 .timeline-duration {
@@ -81,21 +92,25 @@
 
 .timeline-dot {
   position: absolute;
-  left: -11px;
+  left: -23px;
   transform: translateX(-50%);
   width: 12px;
   height: 12px;
-  background: #00c3ff;
+  background: white;
   border-radius: 50%;
+  border: solid var(--primary-color) 3px;
   z-index: 1;
   cursor: pointer;
-  bottom: 19px;
+  bottom: 19.5px;
 }
 
 .timeline-dot.active {
-  background: #0066cc;
+  background: var(--secondary-color);
 }
-.buxa {
+.timeline h2 {
+  padding: 10px 0 10px;
   position: relative;
   z-index: 2;
+  text-align: center;
+  background-color: #f9f9f9;
 }
