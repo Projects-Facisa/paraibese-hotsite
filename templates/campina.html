@@ -218,14 +218,24 @@
           >
             ALIMENTAÇÃO
           </button>
-          <button class="button" onclick="showHide()">LAZER</button>
+          <button
+            class="button"
+            onclick="showSection('lazer-section'),toggleExpanded(this)"
+          >
+            LAZER
+          </button>
           <button
             class="button"
             onclick="showSection('roteiro-section'),toggleExpanded(this)"
           >
             ROTEIRO
           </button>
-          <button class="button" onclick="showHide()">EVENTOS</button>
+          <button
+            class="button"
+            onclick="showSection('eventos-section'),toggleExpanded(this)"
+          >
+            EVENTOS
+          </button>
         </div>
 
         <!-- ----------- ATRACOES-SECTION -------------- -->
@@ -969,6 +979,93 @@
             </div>
           </div>
         </div>
+        <!-- ------------ LAZER-SECTION --------------- -->
+        <div id="lazer-section" class="section">
+          <div class="card">
+            <div class="establishment-logo">
+              <img
+                src="../sources/cidades/imagens-paraibese/campina/lazer/partage2.jpg"
+                alt=""
+              />
+            </div>
+            <div class="establishment-description">
+              <h3>Partage Shopping</h3>
+              <span class="endereco"
+                >Av. Pref. Severino Bezerra Cabral, 1050 - Catolé</span
+              >
+              <p>
+                <i class="fa-solid fa-location-dot"></i></i> Centro comercial moderno com lojas, restaurantes e cinema.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://maps.app.goo.gl/3zf6rWDwJjJptM527"
+                  target="_blank"
+                  >Ir agora</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="establishment-logo">
+              <img src="../sources/cidades/imagens-paraibese/campina/lazer/cg.png" alt="" />
+            </div>
+            <div class="establishment-description">
+              <h3>Açude Velho</h3>
+              <span class="endereco">Centro, Campina Grande - PB</span>
+              <p>
+                <i class="fa-solid fa-location-dot"></i></i>
+                Açude natural histórico, importante cartão postal com monumentos e o Museu de Arte Popular da Paraíba.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://maps.app.goo.gl/QeXVrU36B8sCjBo56"
+                  target="_blank"
+                  >Ir agora</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="establishment-logo">
+              <img src="../sources/cidades/imagens-paraibese/campina/lazer/crianca.jpg" alt="" />
+            </div>
+            <div class="establishment-description">
+              <h3>Parque da Criança</h3>
+              <span class="endereco">Av. Dr. Elpídio de Almeida, 215 - Catolé</span>
+              <p>
+                <i class="fa-solid fa-location-dot"></i></i> Parque com playgrounds, quadras esportivas e áreas verdes para lazer infantil.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://maps.app.goo.gl/sCLThP9XwANj1Rui8"
+                  target="_blank"
+                  >Ir agora</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="establishment-logo">
+              <img src="../sources/cidades/imagens-paraibese/campina/lazer/Teatro-Severino-Cabral_aniversário.jpg" alt="" />
+            </div>
+            <div class="establishment-description">
+              <h3>Teatro</h3>
+              <span class="endereco"
+                >Av. Mal. Floriano Peixoto, S/N - Centro</span
+              >
+              <p>
+                <i class="fa-solid fa-location-dot"></i> Espaço cultural com peças, shows e eventos artísticos.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://maps.app.goo.gl/pmds4ZPwqY5ERhLs6"
+                  target="_blank"
+                  >Ir agora</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
         <!-- ------------ ROTEIRO-SECTION --------------- -->
         <div id="roteiro-section" class="section">
           <div class="timeline">
@@ -1132,6 +1229,130 @@
               Encerraremos com um chá da tarde à beira do lago na encantadora
               Casa de Cumpade.
             </p>
+          </div>
+        </div>
+        <!-- ------------ EVENTOS-SECTION --------------- -->
+        <div id="eventos-section" class="section">
+          <div class="card">
+            <div class="establishment-logo">
+              <img src="../sources/hospedagens-img/Garden.jpg" alt="" />
+            </div>
+            <div class="establishment-description">
+              <h3>Garden Hotel</h3>
+              <span class="categoria">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.1
+              </span>
+              <br />
+              <span class="endereco">R. Eng. José Bezerra, 400 - Mirante</span>
+              <p>
+                <i class="fa-regular fa-user"></i> “Estacionamento Coberto e
+                seguro. Localização próximo ao centro da cidade e atrações
+                turísticas.”
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://www.booking.com/hotel/br/garden.pt-br.html"
+                  target="_blank"
+                  >Ir agora</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="establishment-logo">
+              <img src="../sources/hospedagens-img/Hotel-do-vale.jpg" alt="" />
+            </div>
+            <div class="establishment-description">
+              <h3>Hotel do Vale</h3>
+              <span class="categoria">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+                4.0
+              </span>
+              <br />
+              <span class="endereco">R. Cleiton Ismael, N° 10 - Lauritzen</span>
+              <p>
+                <i class="fa-regular fa-user"></i>
+                “Atendimento, conforto e localização. Café da manhã bem
+                servido.”
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://www.booking.com/hotel/br/do-vale-ltda-campina-grande.pt-br.html"
+                  target="_blank"
+                  >Ir agora</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="establishment-logo">
+              <img src="../sources/hospedagens-img/Intercity.jpg" alt="" />
+            </div>
+            <div class="establishment-description">
+              <h3>Intercity</h3>
+              <span class="categoria">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.3
+              </span>
+              <br />
+              <span class="endereco">Av. Barão Rio Branco, 370 - Centro</span>
+              <p>
+                <i class="fa-regular fa-user"></i> Melhor hotel de negócios da
+                cidade, novo, acabamento fino, quarto confortável, cama
+                excelente, boa acústica.
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://www.booking.com/hotel/br/interciy-campina-grande.pt-br.html"
+                  target="_blank"
+                  >Ir agora</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="establishment-logo">
+              <img src="../sources/hospedagens-img/Village.jpg" alt="" />
+            </div>
+            <div class="establishment-description">
+              <h3>Hotel Village</h3>
+              <span class="categoria">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.6
+              </span>
+              <br />
+              <span class="endereco"
+                >R. Otacílio Nepomuceno, 1285 - Catolé</span
+              >
+              <p>
+                <i class="fa-regular fa-user"></i> "O café da manhã era
+                excelente e o quarto era muito confortável".
+              </p>
+              <button type="button" class="button-reservas">
+                <a
+                  href="https://www.booking.com/hotel/br/village-confort-campina-grande.pt-br.html"
+                  target="_blank"
+                  >Ir agora</a
+                >
+              </button>
+            </div>
           </div>
         </div>
         <!-- MAIN END -->
